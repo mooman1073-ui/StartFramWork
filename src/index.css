@@ -1,0 +1,153 @@
+/** @format */
+
+:root {
+  --main-color: #1abc9c;
+  --second-color: #2c3e50;
+}
+body {
+  padding-top: 80px;
+}
+.isActive {
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
+.navbar {
+  background-color: var(--second-color);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.home-img {
+  width: 250px;
+}
+.line {
+  width: 80px;
+  height: 4px;
+}
+.home,
+.about {
+  background-color: var(--main-color);
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-one {
+  background-color: var(--second-color);
+}
+.icons i {
+  padding: 10px;
+  border: 1px #fff solid;
+  border-radius: 50%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+.footer-two {
+  background-color: #1a252f;
+}
+.portfolio h1 {
+  color: var(--second-color);
+}
+.contact h1 {
+  color: var(--second-color);
+}
+
+.portfolio,
+.contact {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.star-dark i {
+  color: var(--second-color);
+}
+.star-dark div {
+  width: 80px;
+  height: 4px;
+  background-color: var(--second-color) ;
+}
+.layer{
+  background-color: var(--main-color);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.card-photo:hover .layer{
+  opacity: 1;
+}
+.fullscreen-overlay {
+  background-color: #0d6efd40;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.fullscreen-overlay img {
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
+}
+input:focus{
+ box-shadow:none !important;
+}
+.userName label {
+  color: var(--main-color);
+  opacity: 0;         
+  transition: 0.3s ease-in-out;
+  position: absolute;  
+  top: 12px;           
+  left: 0;
+}
+
+.userName:focus-within label {
+  opacity: 1;
+}
+.userAge label {
+  color: var(--main-color);
+  opacity: 0;         
+  transition: 0.3s ease-in-out;
+  position: absolute;  
+  top: 12px;           
+  left: 0;
+}
+
+.userAge:focus-within label {
+  opacity: 1;
+}
+.userEmail label {
+  color: var(--main-color);
+  opacity: 0;         
+  transition: 0.3s ease-in-out;
+  position: absolute;  
+  top: 12px;           
+  left: 0;
+}
+
+.userEmail:focus-within label {
+  opacity: 1;
+}
+.userPassword label {
+  color: var(--main-color);
+  opacity: 0;         
+  transition: 0.3s ease-in-out;
+  position: absolute;  
+  top: 12px;           
+  left: 0;
+}
+
+.userPassword:focus-within label {
+  opacity: 1;
+}
+.btn{
+  background-color: var(--main-color);
+  color: #fff;
+}
+.btn:hover{
+  background-color: var(--main-color);
+  color: #fff;
+}
